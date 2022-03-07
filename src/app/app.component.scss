@@ -1,0 +1,23 @@
+::ng-deep .content {
+    padding: 0px;
+}
+
+::ng-deep .container-fluid {
+    padding: 0px;
+}
+
+::ng-deep .p-dialog .p-dialog-content {
+    background: #ffffff;
+    color: #495057;
+    padding: 0 24px 24px 24px;
+}
+
+::ng-deep .p-dialog .p-dialog-footer {
+    border-top: 0 none;
+    background: #3f5161;
+    color: #495057;
+    padding: 5px 24px 5px 24px;
+    text-align: right;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}

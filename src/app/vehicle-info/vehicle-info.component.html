@@ -1,0 +1,28 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{{car.img}}" class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body">
+              <p class="card-text">
+                Car Model: {{car.model}} <br>
+                Body Style: {{car.body}}<br>
+                Year: {{car.year}}<br>
+                Price: {{car.price}}<br>
+                Color: {{car.color}}<br>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" (click)="goToHomePage()">Go Back</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,20 @@
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #2f3c48;
+    border: 1px solid #3f5161;">
+    <span style="padding-left: 7px;color: white;">
+      Welcome!
+      </span>
+      <a href="#" style="color: rgb(247, 247, 247);text-decoration: none;">
+        <span style="text-align: center;margin-left: 400px;">
+        Vehicle Selling Assitant System
+        </span>
+      </a>
+      <ul class="navbar-nav" style="margin-left: auto;">
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <p style="color: white;cursor: pointer;" class="nav-link dropbtn" data-toggle="dropdown">
+            <span *ngIf="loggedIn" (click)="goToStaff()">William, Jones!</span>
+          </p>
+        </li>
+      </ul>
+    </nav>
+   

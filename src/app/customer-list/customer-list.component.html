@@ -1,0 +1,15 @@
+<h4 style="padding: 5px;">Customer List</h4>
+<hr>
+<div class="container">
+    <div class="list-group">
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item" *ngFor="let c of customerList" (click)="goToCustomerDetail(c)">
+                {{c.name}}
+            </li>
+          </ol>
+      </div>
+      <div class="col-md-4" style="margin-top: 20px">
+        <button type="submit" class="btn btn-primary" (click)="goToStaff()">Go to Staff</button>
+        <button type="submit" class="btn btn-primary" style="margin-left: 20px;" (click)="goToHome()">Home</button>
+      </div>
+</div>

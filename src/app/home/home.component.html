@@ -1,0 +1,38 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row form-group mb-4">
+        <div class="col-4">
+        <input class="form-control" type="text" [(ngModel)]="searchText" placeholder="Search">
+      </div>
+      <div class="col-8">
+        <p-dropdown [options]="model" (onChange)="changeModel($event)" optionLabel="model"></p-dropdown>
+        <p-dropdown [options]="carBody" (onChange)="changeBody($event)" optionLabel="body"></p-dropdown>
+        <p-dropdown [options]="price" (onChange)="changePrice($event)" optionLabel="price"></p-dropdown>
+        <p-dropdown [options]="color" (onChange)="changeColor($event)" optionLabel="color"></p-dropdown>
+        <p-dropdown [options]="year" (onChange)="changeYear($event)" optionLabel="year"></p-dropdown>
+      </div>
+      </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div *ngFor="let car of cars | filter: searchText" class="col">
+              <div class="card shadow-sm">
+                <img src="{{car.img}}" class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false">
+    
+                <div class="card-body">
+                  <p class="card-text">
+                    Car Model: {{car.model}} <br>
+                    Body Style: {{car.body}}
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" (click)="viewCarDetails(car)">View</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+    </div>
+  </div>

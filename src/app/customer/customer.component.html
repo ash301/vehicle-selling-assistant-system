@@ -1,0 +1,48 @@
+<h4 style="padding: 5px;">Customer Details</h4>
+<hr>
+<div class="container">
+    <div class="row">
+      <div class="col-7">
+        <form>
+          <div class="row">
+            <div class="col-md-3">
+              <label for="inputEmail4">Name</label>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Name" value="{{customer.name}}">
+            </div>
+            <div class="col-md-3">
+              <label for="inputPassword4">Phone</label>
+              <input type="text" class="form-control" id="inputPassword4" placeholder="Phone" value="+12123456789">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email" value="{{customer.email}}">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Notes</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="col-md-4" style="margin-top: 20px;">
+            <button type="submit" class="btn btn-primary" (click) = "goToCustomerList()">Go Back</button>
+            <button type="submit" class="btn btn-primary" (click) = "save()" style="margin-left: 30px;" >Save</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="vr" style="padding: 0;"></div>
+      <div class="col-4">
+        <ul class="nav flex-column staff-items">
+          <li class="nav-item" style="margin-top: 100px;">
+            <i class="pi pi-bell"></i><span (click)="sendNotification()" style="cursor: pointer;color: blue;">
+                 Send Notification 
+                </span>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  
+  </div>
+  <p-toast [style]="{marginTop: '40px'}"></p-toast>
