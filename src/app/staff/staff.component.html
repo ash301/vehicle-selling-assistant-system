@@ -1,4 +1,4 @@
-<h4>Staff</h4>
+<h4 style="padding: 5px;">Staff</h4>
 <hr>
 <div class="container">
   <div class="row">
@@ -40,10 +40,10 @@
           <i class="pi pi-phone"></i><span style="cursor: pointer;color: blue;"> Stock Data </span>
         </li>
         <li class="nav-item mg">
-          <i class="pi pi-external-link"></i><span style="cursor: pointer;color: blue;"> Vehicle Info </span>
+          <i class="pi pi-external-link"></i><span (click)="goToVehicleSellingInfo()" style="cursor: pointer;color: blue;"> Vehicle Selling Info </span>
         </li>
         <li class="nav-item mg">
-          <i class="pi pi-chart-line"></i><span style="cursor: pointer;color: blue;"> Analysis </span>
+          <i class="pi pi-chart-line"></i><span (click)="goToAnalysis()" style="cursor: pointer;color: blue;"> Analysis </span>
         </li>
       </ul>
     </div>

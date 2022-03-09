@@ -24,4 +24,12 @@ export class StaffComponent implements OnInit {
   signout(){
     this.router.navigateByUrl('#');
   }
+  goToAnalysis()
+  {
+    this.router.navigateByUrl('analysis');
+  }
+  goToVehicleSellingInfo()
+  {
+    this.router.navigateByUrl('vehicle-selling-info');
+  }
 }

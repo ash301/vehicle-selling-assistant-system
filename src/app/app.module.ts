@@ -24,6 +24,8 @@ import { DropdownModule } from 'primeng/dropdown';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import { CustomerComponent } from './customer/customer.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
+import { AnalysisComponent } from './analysis/analysis.component';
+import { VehicleSellingInfoComponent } from './vehicle-selling-info/vehicle-selling-info.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
     FooterComponent,
     FilterPipe,
     CustomerComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    AnalysisComponent,
+    VehicleSellingInfoComponent
   ],
   imports: [
     BrowserModule,
